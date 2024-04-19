@@ -1,0 +1,26 @@
+{
+  "name": "testtrpc",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "hello": "tsc && node dist/hello.js",
+    "gen": "tsc && trpc-swift -r appRouter -i dist/router.js -o gen/swift/appRouter.swift",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@trpc/client": "^10.45.2",
+    "@trpc/server": "^10.45.2",
+    "trpc-openapi": "^1.2.0",
+    "zod": "^3.22.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7",
+    "trpc-swift": "^0.1.27",
+    "typescript": "^5.4.5"
+  }
+}
