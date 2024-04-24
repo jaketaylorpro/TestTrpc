@@ -15,6 +15,7 @@
   "dependencies": {
     "@trpc/client": "^10.45.2",
     "@trpc/server": "^10.45.2",
+    "@typeform/api-client": "^2.4.1",
     "trpc-openapi": "^1.2.0",
     "zod": "^3.22.5"
   },

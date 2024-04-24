@@ -26,4 +26,5 @@ const trpc = createTRPCProxyClient<AppRouter>({
         }),
     ],
 });
-trpc.hello.query({name:"jake"})
+console.log(await trpc.hello.query({name:"jake"}))
+console.log(await trpc.onboarding.status.query({home_id:"1",email:"a@b",assessment_id:"2"}))
